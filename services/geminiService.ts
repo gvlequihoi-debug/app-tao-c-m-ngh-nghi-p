@@ -6,7 +6,7 @@ if (!process.env.API_KEY) {
   console.warn("API_KEY environment variable not set. Using a placeholder. Please set your API key.");
 }
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || 'YOUR_API_KEY_HERE' });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || 'YOUR_API_KEY_HERE' });
 
 interface GenerateImageParams {
   base64Image: string;
